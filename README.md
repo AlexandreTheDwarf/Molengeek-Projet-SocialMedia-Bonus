@@ -32,7 +32,7 @@ Le projet contient les fichiers suivants :
 Clonez le repository GitHub du projet sur votre machine locale en utilisant la commande suivante dans votre terminal :
 
 ```bash
-git clone <URL_DE_VOTRE_REPOSITORY>
+git clone <https://github.com/AlexandreTheDwarf/Molengeek-Projet-SocialMedia-Bonus.git>
 ```
 
 ### 2. Ajouter votre clé API YouTube
