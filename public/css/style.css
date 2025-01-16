@@ -1,0 +1,146 @@
+/* Style global */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #4A148C, #823BA4);
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #E0E0E0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+form{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Zone de saisie */
+input[type="text"] {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px 20px;
+    margin-top: 20px;
+
+    font-size: 18px;
+    color: #333;
+    background: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+input[type="text"]::placeholder {
+    color: #AAA;
+    font-style: italic;
+}
+
+/* Bouton pour valider */
+button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #FFC107;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #E0A800;
+    transform: translateY(-2px);
+}
+
+/* Section contenant les statistiques */
+section {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/* Bloc pour chaque statistique */
+section > div {
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Nombre des statistiques */
+h3 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+section > div:hover h3 {
+    color: #FFC107;
+}
+
+/* Description sous les nombres */
+p {
+    color: #E0E0E0;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Animation SVG */
+svg {
+    width: 60px;
+    height: 60px;
+    fill: whitesmoke;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+section > div:hover svg {
+    transform: scale(1.2);
+    fill: #FFC107;
+}
